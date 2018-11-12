@@ -10,3 +10,45 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.left img {
+  width: 40px;
+  float: left;
+}
+
+.right img {
+  float: right;
+  width: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  background-color: #d05c2e;
+  padding: .4rem 0;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.nav {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d05c2e;
+}
+
+.nav a {
+  background-color: #d05c2e;
+  display: inline-block;
+  font-family: Merriweather, serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
