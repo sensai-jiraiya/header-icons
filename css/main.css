@@ -31,7 +31,9 @@ h1 {
 .clearfix::after {
   content: " ";
   clear: both;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .nav {
@@ -46,9 +48,42 @@ h1 {
   background-color: #d05c2e;
   display: inline-block;
   font-family: Merriweather, serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-decoration: none;
   color: #fff;
   padding: 0;
   margin: 0;
+  border-style: solid;
+  border-color: #a63f38;
+  border-width: thin;
+}
+
+.home {
+  float: left;
+  width: 33.33%;
+}
+
+.cereals {
+  float: left;
+  width: 33.33%;
+}
+
+.legumes {
+  float: right;
+  width: 33.33%;
+}
+
+.nav a:hover {
+  background-color: #a63f38;
+}
+
+header {
+  background-color: #d05c2e;
+  margin: 0 0 .7rem;
+}
+
+body {
+  background-color: #d05c2e;
+  margin: 0;
+  padding: .5em 0 0;
 }
